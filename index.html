@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zshbyn2012</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background: #f7fafc;
+            color: #222;
+        }
+        header {
+            background: #223a5e;
+            color: #fff;
+            padding: 2rem 0 1.5rem 0;
+            text-align: center;
+        }
+        nav {
+            background: #28527a;
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            padding: 0.8rem 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ffa600;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 1.2rem;
+            box-shadow: 0 4px 24px rgba(36,41,47,0.08);
+            padding: 2.5rem 2.2rem 2rem 2.2rem;
+        }
+        .profile {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+        .profile-info {
+            flex: 2 1 250px;
+        }
+        .profile-pic {
+            flex: 0 0 120px;
+            text-align: center;
+        }
+        .profile-pic img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 3px solid #28527a;
+            object-fit: cover;
+            background: #e3e5e8;
+        }
+        .links {
+            margin: 1.2rem 0 0.7rem 0;
+            display: flex;
+            gap: 1.1rem;
+            flex-wrap: wrap;
+        }
+        .links a {
+            color: #28527a;
+            text-decoration: none;
+            font-size: 1.1em;
+            background: #f3f5f7;
+            padding: 0.2rem 0.75rem;
+            border-radius: 5px;
+            border: 1px solid #dde3ea;
+            display: flex;
+            align-items: center;
+            gap: 0.2em;
+        }
+        .links a:hover {
+            background: #28527a;
+            color: #fff;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        h2 {
+            margin-top: 2.3rem;
+            color: #2678d8;
+            border-bottom: 2px solid #e3eefa;
+            padding-bottom: 0.2rem;
+        }
+        .news-list, .timeline, .interests {
+            margin: 1.2rem 0 2rem 1.2rem;
+        }
+        .news-list li, .timeline li, .interests li {
+            margin-bottom: 0.8rem;
+        }
+        .cv-link {
+            display: inline-block;
+            margin: 1.2rem 0;
+            padding: 0.5rem 1.3rem;
+            background: #2678d8;
+            color: #fff;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .cv-link:hover {
+            background: #ffa600;
+            color: #223a5e;
+        }
+        .address {
+            font-size: 1.1rem;
+            color: #444;
+            margin-bottom: 1rem;
+        }
+        @media (max-width: 700px) {
+            .container { padding: 1rem 0.5rem; }
+            .profile { flex-direction: column; align-items: flex-start; gap: 1rem; }
+            nav { gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>zshbyn2012</h1>
+        <div>Web Developer &amp; Technology Enthusiast<br>Stockholm, Sweden</div>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#group">Group</a>
+        <a href="#publications">Publications</a>
+        <a href="#research">Research</a>
+        <a href="#service">Service</a>
+        <a href="#talks">Talks</a>
+        <a href="#tools">Tools</a>
+    </nav>
+    <div class="container">
+        <section class="profile" id="home">
+            <div class="profile-pic">
+                <!-- Replace src with your own photo if you want -->
+                <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="zshbyn2012">
+            </div>
+            <div class="profile-info">
+                <h2>zshbyn2012</h2>
+                <div class="address">
+                    Web Developer<br>
+                    Stockholm, Sweden<br>
+                    Independent / Open Source
+                </div>
+                <div class="links">
+                    <a href="mailto:your.email@example.com">Email</a>
+                    <a href="https://twitter.com/" target="_blank">Twitter</a>
+                    <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/zshbyn2012" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Home</h2>
+            <p>
+                Welcome to my corner of the web!<br><br>
+                Hi, I’m zshbyn2012, a web developer and open source enthusiast passionate about creating accessible, well-designed web experiences. My journey is driven by a love for technology and a curiosity to learn and build new things. 
+            </p>
+            <ul>
+                <li>Recently launched my personal website and started contributing to open source projects.</li>
+                <li>Learning advanced JavaScript frameworks and accessibility best practices.</li>
+            </ul>
+            <p>
+                My interests include web development, open source, and making technology accessible to everyone.
+            </p>
+            <p>
+                Academic background:
+                <ul>
+                    <li>BSc in Computer Science, Example University</li>
+                    <li>Member of the local developer community</li>
+                </ul>
+            </p>
+            <p>
+                Beyond coding, I enjoy photography, travel, and exploring the latest in tech. Feel free to connect with me!
+            </p>
+        </section>
+        <section>
+            <h2>News</h2>
+            <ul class="news-list">
+                <li>[June 2025] Launched my new website!</li>
+                <li>[April 2025] Contributed to an open-source project on GitHub.</li>
+                <li>[March 2025] Presented at Local Dev Meetup.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <div class="address">
+                Stockholm, Sweden<br>
+                [Your Institution/Organization if any]
+            </div>
+            <a href="https://maps.google.com/?q=Stockholm,+Sweden" target="_blank">See on Google Maps</a>
+        </section>
+        <section>
+            <h2>CV</h2>
+            <a href="#" class="cv-link">Find my CV here</a>
+        </section>
+        <section>
+            <h2>In a Nutshell</h2>
+            <ul class="timeline">
+                <li>2025–present: Web Developer & Open Source Contributor</li>
+                <li>2023–2025: Computer Science Student</li>
+                <li>2021–2023: Tech Hobbyist & Learner</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
