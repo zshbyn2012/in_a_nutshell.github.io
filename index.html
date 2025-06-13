@@ -104,19 +104,24 @@
         .news-list li, .timeline li, .interests li {
             margin-bottom: 0.8rem;
         }
-        .cv-link {
-            display: inline-block;
-            margin: 1.2rem 0;
-            padding: 0.5rem 1.3rem;
-            background: #2678d8;
-            color: #fff;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 500;
+        .news-list li::before, .timeline li::before {
+            content: "•";
+            color: #2678d8;
+            margin-right: 0.5rem;
         }
-        .cv-link:hover {
-            background: #ffa600;
-            color: #223a5e;
+        .timeline li {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .timeline li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 8px;
+            height: 8px;
+            background: #2678d8;
+            border-radius: 50%;
         }
         .address {
             font-size: 1.1rem;
@@ -133,7 +138,7 @@
 <body>
     <header>
         <h1>zshbyn2012</h1>
-        <div>Web Developer &amp; Technology Enthusiast<br>Stockholm, Sweden</div>
+        <div>Web Developer &amp; Technology Enthusiast<br>Umeå, Sweden</div>
     </header>
     <nav>
         <a href="#home">Home</a>
@@ -153,14 +158,12 @@
             <div class="profile-info">
                 <h2>zshbyn2012</h2>
                 <div class="address">
-                    Web Developer<br>
-                    Stockholm, Sweden<br>
-                    Independent / Open Source
+                    New web Developer<br>
+                    Umeå, Sweden<br>
+                    Open Source
                 </div>
                 <div class="links">
-                    <a href="mailto:your.email@example.com">Email</a>
-                    <a href="https://twitter.com/" target="_blank">Twitter</a>
-                    <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+                    <a href="zeeshanbyn2000@gmail.com">Email</a>
                     <a href="https://github.com/zshbyn2012" target="_blank">GitHub</a>
                 </div>
             </div>
@@ -168,51 +171,42 @@
         <section>
             <h2>Home</h2>
             <p>
-                Welcome to my corner of the web!<br><br>
-                Hi, I’m zshbyn2012, a web developer and open source enthusiast passionate about creating accessible, well-designed web experiences. My journey is driven by a love for technology and a curiosity to learn and build new things. 
+                Welcome to my side of the web!<br><br>
+                Hi, I’m zshbyn2012, a new web developer and open source liker, eager about creating accessible, well-designed web experiences. My journey is driven by curiosity for technology and a curiosity to learn and build new things. 
             </p>
             <ul>
                 <li>Recently launched my personal website and started contributing to open source projects.</li>
-                <li>Learning advanced JavaScript frameworks and accessibility best practices.</li>
+                <li>Learning html frameworks makes it accessibil in best practices.</li>
             </ul>
             <p>
                 My interests include web development, open source, and making technology accessible to everyone.
             </p>
             <p>
-                Academic background:
-                <ul>
-                    <li>BSc in Computer Science, Example University</li>
-                    <li>Member of the local developer community</li>
-                </ul>
+               I’m currently focused on improving my skills in HTML and exploring frameworks like React and Vue.js.
             </p>
             <p>
-                Beyond coding, I enjoy photography, travel, and exploring the latest in tech. Feel free to connect with me!
+                Beyond coding, I enjoy travel, and exploring the latest in tech. Feel free to connect with me!
             </p>
         </section>
         <section>
             <h2>News</h2>
             <ul class="news-list">
                 <li>[June 2025] Launched my new website!</li>
-                <li>[April 2025] Contributed to an open-source project on GitHub.</li>
-                <li>[March 2025] Presented at Local Dev Meetup.</li>
             </ul>
         </section>
         <section>
             <h2>Contact</h2>
             <div class="address">
-                Stockholm, Sweden<br>
-                [Your Institution/Organization if any]
+                Umeå, Sweden<br>
             </div>
-            <a href="https://maps.google.com/?q=Stockholm,+Sweden" target="_blank">See on Google Maps</a>
+            <a href="https://maps.google.com/?q=Umeå,+Sweden" target="_blank">See on Google Maps</a>
         </section>
         <section>
-            <h2>CV</h2>
-            <a href="#" class="cv-link">Find my CV here</a>
         </section>
         <section>
             <h2>In a Nutshell</h2>
             <ul class="timeline">
-                <li>2025–present: Web Developer & Open Source Contributor</li>
+                <li>2025–present: Web Developer</li>
                 <li>2023–2025: Computer Science Student</li>
                 <li>2021–2023: Tech Hobbyist & Learner</li>
             </ul>
