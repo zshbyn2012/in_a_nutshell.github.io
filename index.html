@@ -98,30 +98,22 @@
             border-bottom: 2px solid #e3eefa;
             padding-bottom: 0.2rem;
         }
+        /* Remove blue bullets, keep default black ones */
         .news-list, .timeline, .interests {
             margin: 1.2rem 0 2rem 1.2rem;
+            padding-left: 1.5rem;
         }
         .news-list li, .timeline li, .interests li {
             margin-bottom: 0.8rem;
+            /* Remove custom bullet styles */
+            list-style-type: disc;
+            color: #222;
+            position: static;
+            padding-left: 0;
         }
+        /* Remove custom blue bullet before */
         .news-list li::before, .timeline li::before {
-            content: "•";
-            color: #2678d8;
-            margin-right: 0.5rem;
-        }
-        .timeline li {
-            position: relative;
-            padding-left: 1.5rem;
-        }
-        .timeline li::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0.5rem;
-            width: 8px;
-            height: 8px;
-            background: #2678d8;
-            border-radius: 50%;
+            content: none;
         }
         .address {
             font-size: 1.1rem;
